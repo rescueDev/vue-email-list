@@ -10,11 +10,18 @@
     ></script>
     <!-- Cdn VUE -->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Vue Mail List</title>
   </head>
   <body>
+    <header>Vue Random Email Generator</header>
     <div id="app">
+      <button @click="generaList">Generate</button>
       <ul>
         <li v-for="email in emails">{{email}}</li>
       </ul>
